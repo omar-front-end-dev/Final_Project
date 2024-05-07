@@ -1,0 +1,130 @@
+header{
+  transition: height 250ms ease-in-out;
+  animation: .4s ease-out;
+}
+@keyframes top {
+  from{
+      top: -100px;
+      opacity: 0.3;
+  }
+  to{
+      top: 0px;
+      opacity: 1;
+  }
+}
+.header__link::before,
+.header__drop-menu__links::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  background-color: #ae946d;
+  width: 0;
+  height: 2px;
+  transition: 0.3s;
+}
+.header__link:hover::before,
+.header__drop-menu__links:hover:before{
+  width: 100%;
+}
+
+.header__drop-menu {
+  display: "none" !important;
+}
+.header__link:hover .header__drop-menu {
+  display: block !important;
+}
+.header__drop-menu {
+  animation-name: opacity;
+  animation-duration: 0.6s;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.header-user__content,
+.header-search-Input__content {
+  animation: translateY 0.3s ease-in-out forwards;
+}
+
+.header-search-drawer__icon:hover,
+.header-favorite__icon:hover,
+.header-cart__icon:hover,
+.header-user_icon:hover {
+  color: #7d7d7d !important;
+}
+
+@keyframes translateY {
+  0% {
+    transform: translateY(8px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.header-user__bottom-login:hover,
+.cart-drawer__secure-checkout:hover {
+  background-color: #ae946dde !important;
+}
+
+.header-user__register-link::before,
+.header-cart__Link::before,
+.cart-drawer__link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #ae946d;
+  bottom: -3px;
+}
+
+.header-user__register-link::after,
+.header-cart__Link::after,
+.cart-drawer__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #181818;
+  bottom: -3px;
+  transition: 0.3s;
+  z-index: 222;
+}
+
+.header-user__register-link:hover::after,
+.header-cart__Link:hover::after,
+.cart-drawer__link:hover::after {
+  width: 100%;
+}
+.header-search-drawer__icon {
+  display: flex;
+}
+
+@media (min-width: 1200px) {
+  .header-search-drawer__icon {
+    display: none;
+  }
+}
+
+
+.header-search__output__item:hover {
+  box-shadow: 0px 0px 10px 1px #cccccc8e;
+}
+
+.header-drawer-cart__quantity:focus{
+  outline: none;
+}
+
+.header-userName__link:hover{
+  color: #fff !important;
+}

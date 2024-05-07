@@ -1,0 +1,12 @@
+.filter-by__category{
+    padding: 5px 10px;
+    font-size: 17px;
+    font-weight:  900;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid #bbb;
+}
+.filter-by__category option{
+    font-size: 17px;
+    font-weight:  900;
+}

@@ -8,7 +8,7 @@ export const Header_Search_Output = ({
   searchResults,
   showResults,
   toggleDrawer,
-  setShowResults
+  setShowResults,
 }) => {
   const theme = useTheme();
 
@@ -55,7 +55,11 @@ export const Header_Search_Output = ({
                 suggested products
               </Typography>
               {searchResults.map((product) => (
-                <Box key={product.id} className="header-search__output__items" onClick={() => setShowResults(false)}>
+                <Box
+                  key={product.id}
+                  className="header-search__output__items"
+                  onClick={() => setShowResults(false)}
+                >
                   <Link
                     to={`${product.gender}/${product.category}/products/${product.id}`}
                     onClick={toggleDrawer(false)}
@@ -93,11 +97,28 @@ export const Header_Search_Output = ({
                       </Typography>
                       <Typography
                         component={"p"}
-                        variant="p"
                         sx={{
-                          fontSize: "15px",
-                          fontWeight: "600",
-                          color: theme.palette.ThirdColor.main,
+                          color: "#ba2026",
+                          fontSize: { xs: "14px", md: "15px" },
+                          fontWeight: "bold",
+                          display: product?.sale ? "block" : "none",
+                        }}
+                      >
+                        EGP {product.sale}
+                      </Typography>
+                      <Typography
+                        component={"p"}
+                        sx={{
+                          color: product.sale
+                            ? "#666"
+                            : theme.palette.ThirdColor.main,
+                          fontSize: product.sale
+                            ? { xs: "13px", md: "14px" }
+                            : { xs: "14px", md: "15px" },
+                          fontWeight: product.sale ? "light" : "bold",
+                          textDecoration: product.sale
+                            ? "line-through"
+                            : "none",
                         }}
                       >
                         EGP {product.price}

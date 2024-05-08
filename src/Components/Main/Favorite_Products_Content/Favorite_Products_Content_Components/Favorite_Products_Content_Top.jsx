@@ -30,7 +30,7 @@ export const Favorite_Products_Content_Top = () => {
             color: theme.palette.firstColor.main,
             mb: { xs: "20px", sm: "0" },
           }}
-        >{`${dataName.firstName}'s WISHLIST`}</Typography>
+        >{`${userId ? dataName.firstName : "Favorite"}'s WISHLIST`}</Typography>
         <Box
           sx={{
             display: "flex",

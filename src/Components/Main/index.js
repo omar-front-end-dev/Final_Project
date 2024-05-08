@@ -41,6 +41,7 @@ import { Buttons_Show_Shop_Products } from "./Buttons_Show_Shop_Products/Buttons
 import { Buttons_Control_In_Show_Products } from "./Buttons_Control_In_Show_Products/Buttons_Control_In_Show_Products";
 import { Bread_Crumbs } from "./Bread_Crumbs/Bread_Crumbs";
 import { Authentication_Links } from "./Authentication_Links/Authentication_Links";
+import { Scroll_To_Top } from "./Scroll_To_Top/Scroll_To_Top";
 
 export {
   Video_Player,
@@ -86,4 +87,5 @@ export {
   Buttons_Control_In_Show_Products,
   Bread_Crumbs,
   Authentication_Links,
+  Scroll_To_Top,
 };

@@ -6986,51 +6986,7 @@
       "lastName": "Mohamed",
       "email": "om7994079@gmail.com",
       "password": "x6DGsHTFn4.KNYG",
-      "cart": [
-        {
-          "productStock": 40,
-          "productId": "2",
-          "productTitle": "T7 Metallic Track Jacket",
-          "productColor": {
-            "default": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/627195/01/fnd/DFA/fmt/png/T7-Metallic-Track-Jacket",
-            "imagesGroup": [
-              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/627195/01/fnd/DFA/fmt/png/T7-Metallic-Track-Jacket",
-              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/627195/01/bv/fnd/DFA/fmt/png/T7-Metallic-Track-Jacket"
-            ]
-          },
-          "productSize": "s",
-          "productPrice": 7.519,
-          "productQuantity": 2,
-          "productGender": "man",
-          "productCategory": "jackets",
-          "productMaxQuantity": 3,
-          "id": "OghhkLyh",
-          "quantity": null
-        },
-        {
-          "productStock": 70,
-          "productId": "4",
-          "productTitle": "Prime Idol Baguette Bag",
-          "productColor": {
-            "default": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/090388/01/fnd/DFA/fmt/png/Prime-Idol-Baguette-Bag",
-            "imagesGroup": [
-              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/090388/01/fnd/DFA/fmt/png/Prime-Idol-Baguette-Bag",
-              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/090388/01/mod01/fnd/DFA/fmt/png/Prime-Idol-Baguette-Bag",
-              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/090388/01/mod02/fnd/DFA/fmt/png/Prime-Idol-Baguette-Bag",
-              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/090388/01/bv/fnd/DFA/fmt/png/Prime-Idol-Baguette-Bag",
-              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/090388/01/bv/fnd/DFA/fmt/png/Prime-Idol-Baguette-Bag"
-            ]
-          },
-          "productSize": "OSFA",
-          "productPrice": 3.759,
-          "productQuantity": 1,
-          "productGender": "women",
-          "productCategory": "bags",
-          "productMaxQuantity": 9,
-          "id": "UvPN4w7J",
-          "quantity": null
-        }
-      ],
+      "cart": [],
       "favorites": [
         {
           "productStock": 70,

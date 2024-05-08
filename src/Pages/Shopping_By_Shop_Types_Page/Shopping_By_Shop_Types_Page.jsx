@@ -6,7 +6,7 @@ import { Is_Loading } from "../../Components/Main/Is_Loading/Is_Loading";
 import { useEffect, useMemo, useState } from "react";
 import "./Shopping_By_Shop_Types_Page.css";
 import TuneIcon from "@mui/icons-material/Tune";
-import { Shopping_Page_Filter_Categories, Shopping_Page_Content, Bread_Crumbs } from "../../Components/Main/index"
+import { Shopping_Page_Filter_Categories, Shopping_Page_Content, Bread_Crumbs, Scroll_To_Top  } from "../../Components/Main/index";
 
 export const Shopping_By_Shop_Types_Page = () => {
   const { shoppingType } = useParams();
@@ -14,6 +14,12 @@ export const Shopping_By_Shop_Types_Page = () => {
   const { dataName, isLoading } = useGetData(`/products`);
   const [selectedCategory, setSelectedCategory] = useState("");
   const location = useLocation();
+
+  
+
+
+
+
 
   useEffect(() => {
     if (location) {
@@ -104,6 +110,7 @@ export const Shopping_By_Shop_Types_Page = () => {
               <Shopping_Page_Content products={filteredProducts} />
             )}
           </Container>
+          <Scroll_To_Top/>
         </Box>
       )}
     </Box>

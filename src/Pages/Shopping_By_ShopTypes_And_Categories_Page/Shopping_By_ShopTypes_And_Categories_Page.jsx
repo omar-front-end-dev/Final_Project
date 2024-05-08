@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { useGetData } from "../../Hooks/useGetData";
 import { Box, Container } from "@mui/material";
 import { useMemo } from "react";
-import { Bread_Crumbs, Shopping_Page_Content, Is_Loading } from "../../Components/Main/index"
+import { Bread_Crumbs, Shopping_Page_Content, Is_Loading, Scroll_To_Top } from "../../Components/Main/index"
 
 
 export const Shopping_By_ShopTypes_And_Categories_Page = () => {
@@ -44,6 +44,7 @@ export const Shopping_By_ShopTypes_And_Categories_Page = () => {
             </Box>
           )}
         </Container>
+        <Scroll_To_Top/>
       </Box>
     );
 }

@@ -6980,37 +6980,6 @@
     }
   ],
   "users": [
-    {
-      "id": "60d2",
-      "firstName": "Omar",
-      "lastName": "Mohamed",
-      "email": "om7994079@gmail.com",
-      "password": "x6DGsHTFn4.KNYG",
-      "cart": [],
-      "favorites": [
-        {
-          "productStock": 70,
-          "productId": "4",
-          "productTitle": "Prime Idol Baguette Bag",
-          "productColor": {
-            "default": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/090388/01/fnd/DFA/fmt/png/Prime-Idol-Baguette-Bag",
-            "imagesGroup": [
-              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/090388/01/fnd/DFA/fmt/png/Prime-Idol-Baguette-Bag",
-              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/090388/01/mod01/fnd/DFA/fmt/png/Prime-Idol-Baguette-Bag",
-              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/090388/01/mod02/fnd/DFA/fmt/png/Prime-Idol-Baguette-Bag",
-              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/090388/01/bv/fnd/DFA/fmt/png/Prime-Idol-Baguette-Bag",
-              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/090388/01/bv/fnd/DFA/fmt/png/Prime-Idol-Baguette-Bag"
-            ]
-          },
-          "productSize": "OSFA",
-          "productPrice": 3.759,
-          "productQuantity": 1,
-          "productGender": "women",
-          "productCategory": "bags",
-          "productMaxQuantity": 9,
-          "id": "gZQ9eGoO"
-        }
-      ]
-    }
+    
   ]
 }

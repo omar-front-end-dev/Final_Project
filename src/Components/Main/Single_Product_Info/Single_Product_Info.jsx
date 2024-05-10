@@ -101,8 +101,8 @@ export const Single_Product_Info = ({ product }) => {
       product.images &&
       product.images.length > 0
     ) {
-      setDataObj((prevCartData) => ({
-        ...prevCartData,
+      setDataObj((prevData) => ({
+        ...prevData,
         productId: product.id,
         productTitle: product.title,
         productColor: product.images[0],
@@ -122,11 +122,9 @@ export const Single_Product_Info = ({ product }) => {
   const addToCartHandler = () => {
     if (dataObj.productSize !== "") {
       setSizeStatus(true);
-
       if (isAuth) {
         dispatch(updateCartData({ id: userId, cart: cartItems }));
         dispatch(addItem(dataObj));
-        toast.success(`The product has been added to the shopping cart`);
       } else {
         toast.error("You must have an account or log in");
         const navigateInterval = setInterval(() => {

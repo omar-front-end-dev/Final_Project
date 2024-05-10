@@ -14,7 +14,14 @@ import {
   getFavoriteData,
   updateFavoriteData,
 } from "./RTK/Slices/favoriteSlice";
-import { Shopping_By_Shop_Types_Page, Shopping_By_ShopTypes_And_Categories_Page, Home, Favorite_Products, Cart_Page, Authentication_Page, Single_Product,
+import {
+  Shopping_By_Shop_Types_Page,
+  Shopping_By_ShopTypes_And_Categories_Page,
+  Home,
+  Favorite_Products,
+  Cart_Page,
+  Authentication_Page,
+  Single_Product,
 } from "./Pages/index";
 
 function App() {

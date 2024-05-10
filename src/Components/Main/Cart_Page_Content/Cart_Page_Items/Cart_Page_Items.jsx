@@ -5,7 +5,7 @@ import { useTheme } from "@emotion/react";
 import { useDispatch } from "react-redux";
 import { removeItem } from "../../../../RTK/Slices/cartSlice";
 import { PropTypes } from "prop-types";
-import { Cart_Page_Quantity } from "../Cart_Page_Quantity/Cart_Page_Quantity";
+import { Handle_With_Quantity_In_Shop } from "../../index";
 
 export const Cart_Page_Items = ({ cartItem }) => {
   const theme = useTheme();
@@ -26,15 +26,18 @@ export const Cart_Page_Items = ({ cartItem }) => {
         display: "flex",
         justifyContent: "space-between",
         gap: 3,
-        flexDirection: {xs: "column", md: "row"}
+        flexDirection: { xs: "column", md: "row" },
       }}
     >
-      <Box className="header-drawer-cart-items__image" sx={{textAlign: "center"}}>
+      <Box
+        className="header-drawer-cart-items__image"
+        sx={{ textAlign: "center" }}
+      >
         <Link
           to={`/${cartItem.productGender}/${cartItem.productCategory}/products/${cartItem.productId}`}
         >
           <img
-            style={{ width: "230px",}}
+            style={{ width: "230px" }}
             src={cartItem.productColor.default}
             alt="title"
           />
@@ -100,15 +103,17 @@ export const Cart_Page_Items = ({ cartItem }) => {
           sx={{ fontSize: "14px", mb: "10px" }}
         >
           Size{" "}
-          <strong style={{ marginLeft: "5px", textTransform :"uppercase" }}>{cartItem.productSize}</strong>
+          <strong style={{ marginLeft: "5px", textTransform: "uppercase" }}>
+            {cartItem.productSize}
+          </strong>
         </Typography>
 
-        <Cart_Page_Quantity cartItem={cartItem} />
+        <Handle_With_Quantity_In_Shop cartItem={cartItem} />
       </Box>
     </Box>
   );
 };
 
 Cart_Page_Items.propTypes = {
-  cartItem: PropTypes.objet,
+  cartItem: PropTypes.object,
 };

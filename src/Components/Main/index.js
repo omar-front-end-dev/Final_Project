@@ -35,13 +35,13 @@ import { Cart_Page_Content } from "./Cart_Page_Content/Cart_Page_Content";
 import { Cart_Page_Empty } from "./Cart_Page_Content/Cart_Page_Empty/Cart_Page_Empty";
 import { Cart_Page_Info } from "./Cart_Page_Content/Cart_Page_Info/Cart_Page_Info";
 import { Cart_Page_Items } from "./Cart_Page_Content/Cart_Page_Items/Cart_Page_Items";
-import { Cart_Page_Quantity } from "./Cart_Page_Content/Cart_Page_Quantity/Cart_Page_Quantity";
 import { Card_Item } from "./Card_Item/Card_Item";
 import { Buttons_Show_Shop_Products } from "./Buttons_Show_Shop_Products/Buttons_Show_Shop_Products";
 import { Buttons_Control_In_Show_Products } from "./Buttons_Control_In_Show_Products/Buttons_Control_In_Show_Products";
 import { Bread_Crumbs } from "./Bread_Crumbs/Bread_Crumbs";
 import { Authentication_Links } from "./Authentication_Links/Authentication_Links";
 import { Scroll_To_Top } from "./Scroll_To_Top/Scroll_To_Top";
+import { Handle_With_Quantity_In_Shop } from "./Handle_With_Quantity_In_Shop/Handle_With_Quantity_In_Shop";
 
 export {
   Video_Player,
@@ -81,11 +81,11 @@ export {
   Cart_Page_Empty,
   Cart_Page_Info,
   Cart_Page_Items,
-  Cart_Page_Quantity,
   Card_Item,
   Buttons_Show_Shop_Products,
   Buttons_Control_In_Show_Products,
   Bread_Crumbs,
   Authentication_Links,
   Scroll_To_Top,
+  Handle_With_Quantity_In_Shop,
 };

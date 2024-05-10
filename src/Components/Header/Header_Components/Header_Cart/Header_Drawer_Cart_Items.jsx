@@ -5,7 +5,7 @@ import { BsTrash3 } from "react-icons/bs";
 import { PropTypes } from "prop-types";
 import { useDispatch } from "react-redux";
 import { removeItem } from "../../../../RTK/Slices/cartSlice";
-import { QuantityHandling } from "./QuantityHandling";
+import { Handle_With_Quantity_In_Shop } from "../../../Main/index";
 
 export const Header_Drawer_Cart_Items = ({ cartItem, toggleDrawer }) => {
   const theme = useTheme();
@@ -102,7 +102,7 @@ export const Header_Drawer_Cart_Items = ({ cartItem, toggleDrawer }) => {
           <strong style={{ marginLeft: "5px", textTransform :"uppercase" }}>{cartItem.productSize}</strong>
         </Typography>
 
-        <QuantityHandling cartItem={cartItem} />
+        <Handle_With_Quantity_In_Shop cartItem={cartItem} />
       </Box>
     </Box>
   );

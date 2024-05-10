@@ -2,7 +2,7 @@ import { useTheme } from "@emotion/react";
 import { Button, Stack, Typography } from "@mui/material";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import { PropTypes } from "prop-types";
-import ReportOutlinedIcon from '@mui/icons-material/ReportOutlined';
+import ReportOutlinedIcon from "@mui/icons-material/ReportOutlined";
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
 export const Single_Product_Info_Bottom = ({
   setDataObj,
@@ -56,16 +56,14 @@ export const Single_Product_Info_Bottom = ({
           fontWeight: "bold",
           fontSize: "14px",
           display:
-            favoriteState === false && favoriteState !== null
-              ? "flex"
-              : "none",
-              alignContent: "center",
-            gap: 1,
-            textTransform: "capitalize"
+            favoriteState === false && favoriteState !== null ? "flex" : "none",
+          alignContent: "center",
+          gap: 1,
+          textTransform: "capitalize",
         }}
       >
         This product is already in your favorites list
-        <ReportOutlinedIcon/>
+        <ReportOutlinedIcon />
       </Typography>
       <Typography
         sx={{
@@ -75,8 +73,8 @@ export const Single_Product_Info_Bottom = ({
           fontSize: "14px",
           display: favoriteState === true ? "flex" : "none",
           alignContent: "center",
-        gap: 1,
-        textTransform: "capitalize"
+          gap: 1,
+          textTransform: "capitalize",
         }}
       >
         This product added to favorites

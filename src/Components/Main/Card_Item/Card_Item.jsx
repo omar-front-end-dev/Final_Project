@@ -24,6 +24,7 @@ export const Card_Item = ({ product }) => {
             color: "#fff",
             fontSize: "10px",
             p: "1.5px 10px",
+            zIndex: "100"
           }}
         >
           {Math.ceil(total)}%

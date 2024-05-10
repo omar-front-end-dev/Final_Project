@@ -1,25 +1,23 @@
-
- 
 import { useDispatch, useSelector } from "react-redux";
-import { selectQuantity, updateCartData } from "../../../../RTK/Slices/cartSlice";
+import { selectQuantity, updateCartData } from "../../../RTK/Slices/cartSlice";
 import { useEffect } from "react";
 import { PropTypes } from "prop-types"
 
-export const Cart_Page_Quantity = ({ cartItem }) => {
+export const Handle_With_Quantity_In_Shop = ({ cartItem }) => {
   const dispatch = useDispatch();
   const { userId } = useSelector(state => state.authReducer);
-  const { cartItems } = useSelector(state => state.cartReducer); 
+  const { cartItems } = useSelector(state => state.cartReducer);
 
   const handleQuantityChange = (event) => {
     const newQuantity = parseInt(event.target.value);
-    dispatch(selectQuantity({ productId: cartItem.productId, quantity: newQuantity }));
+    dispatch(selectQuantity({ id: cartItem.id, quantity: newQuantity }));
     dispatch(updateCartData({ id: userId, cart: [{ ...cartItem, productQuantity: newQuantity }] }));
   };
 
   useEffect(() => {
     
     dispatch(updateCartData({ id: userId, cart: cartItems }));
-  }, [dispatch, userId, cartItems]);
+  }, [dispatch, userId, cartItems]); 
 
   return (
     <select
@@ -42,6 +40,6 @@ export const Cart_Page_Quantity = ({ cartItem }) => {
   );
 };
 
-Cart_Page_Quantity.propTypes = {
+Handle_With_Quantity_In_Shop.propTypes = {
   cartItem: PropTypes.object
 }

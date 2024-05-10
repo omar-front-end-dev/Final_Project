@@ -1,7 +1,9 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+import toast from "react-hot-toast";
 
 const initialState = {
   cartItems: [],
+  // allowedQuantity: null
 };
 
 export const getCartData = createAsyncThunk("cart/getCartData", async (id) => {
@@ -27,7 +29,8 @@ const cartSlice = createSlice({
   initialState,
   reducers: {
     addItem: (state, action) => {
-      const { productId, productSize, productColor } = action.payload;
+      const { productId, productSize, productColor, productMaxQuantity, productTitle } = action.payload;
+    
       const existingItem = state.cartItems.find(item => 
         item.productId === productId && 
         item.productSize === productSize && 
@@ -35,14 +38,20 @@ const cartSlice = createSlice({
       );
     
       if (existingItem) {
-       
-        state.cartItems = state.cartItems.map(item =>
-          item.productId === productId && 
-          item.productSize === productSize && 
-          item.productColor.default === productColor.default
-            ? { ...item, productQuantity: item.productQuantity + 1 }
-            : item
-        );
+        if (existingItem.productQuantity < productMaxQuantity) {
+          toast.success(`The product has been added to the shopping cart`);
+          state.allowedQuantity = existingItem.productQuantity + 1;
+          state.cartItems = state.cartItems.map(item =>
+            item.productId === productId && 
+            item.productSize === productSize && 
+            item.productColor.default === productColor.default
+              ? { ...item, productQuantity: item.productQuantity + 1 }
+              : item
+              
+          );
+        }else{
+          toast.error(`You have reached the product limit ${productTitle.slice(0, 20)}...`);
+        }
       } else {
         state.cartItems.push(action.payload);
       }
@@ -56,14 +65,11 @@ const cartSlice = createSlice({
       state.cartItems = [];
     },
     selectQuantity: (state, action) => {
-      const { productId } = action.payload;
-      const itemToUpdate = state.cartItems.find(item => item.productId === productId);
-      if (itemToUpdate) {
-        const updatedCartItems = state.cartItems.map(item =>
-          item.productId === productId ? { ...item, quantity: item.quantity + 1 } : item
-        );
-        state.cartItems = updatedCartItems;
-      }
+      const { id, quantity } = action.payload;
+      const updatedCartItems = state.cartItems.map(item =>
+        item.id === id ? { ...item, productQuantity: quantity } : item
+      );
+      state.cartItems = updatedCartItems;
     }
   },
   extraReducers: (builder) => {

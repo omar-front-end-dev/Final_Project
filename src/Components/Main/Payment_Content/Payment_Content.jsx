@@ -14,7 +14,7 @@ import { Payment_Order_List } from "./Payment_Components/Payment_Order_List";
 import { PropTypes } from "prop-types";
 import { Payment_Additional_Costs_And_Total } from "./Payment_Components/Payment_Additional_Costs_And_Total";
 import { Client_Info_The_Required } from "./Payment_Components/Client_Info_The_Required";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Payment_Receipt } from "./Payment_Components/Payment_Receipt";
 
 export const Payment_Content = ({ cartItems, userInfo }) => {
@@ -30,24 +30,6 @@ export const Payment_Content = ({ cartItems, userInfo }) => {
     addressLine1: "",
     addressLine2: "",
   });
-  const [formValues, setFormValues] = useState(false);
-
-  useEffect(() => {
-    if (
-      initialValues.firstName !== "" &&
-      initialValues.lastName !== "" &&
-      initialValues.email !== "" &&
-      initialValues.phone !== "" &&
-      initialValues.country !== "" &&
-      initialValues.city !== "" &&
-      initialValues.addressLine1 !== "" &&
-      initialValues.addressLine2 !== ""
-    ) {
-      setFormValues(true);
-    }
-  }, [initialValues]);
-
-  console.log(formValues);
 
   const Calculate_Shopping_Cost = (cost) => {
     const totalCosts = cartItems
@@ -178,6 +160,7 @@ export const Payment_Content = ({ cartItems, userInfo }) => {
             isCompletedOrder={isCompletedOrder}
             initialValues={initialValues}
             setInitialValues={setInitialValues}
+            cartItems={cartItems}
           />
         </Box>
         <Box sx={{ flexBasis: { xs: "100%", md: "55%" } }}>
@@ -185,9 +168,7 @@ export const Payment_Content = ({ cartItems, userInfo }) => {
             <Payment_Receipt
               totalDutiesAndTaxes={totalDutiesAndTaxes}
               Calculate_Shopping_Cost={Calculate_Shopping_Cost}
-              calc_Shopping_Cost_And_TotalItems={
-                calc_Shopping_Cost_And_TotalItems
-              }
+              calc_Shopping_Cost_And_TotalItems={calc_Shopping_Cost_And_TotalItems}
             />
           </Box>
           <Box>

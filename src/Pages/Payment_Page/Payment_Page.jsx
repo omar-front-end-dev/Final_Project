@@ -7,6 +7,7 @@ import { useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 import { useGetData } from "../../Hooks/useGetData";
 import "./Payment_Page.css"
+import { Payment_Empty } from "../../Components/Main/Payment_Content/Payment_Components/Payment_Empty";
 
 export const Payment_Page = () => {
   const theme = useTheme();
@@ -14,12 +15,12 @@ export const Payment_Page = () => {
   const { dataName, isLoading } = useGetData(
     `http://localhost:3000/users?id=${userId}`
   );
-  const [cartItems, setCartItems] = useState([]);
   const [userInfo, setUserInfo] = useState({});
+  const { cartItems } = useSelector(state => state.cartReducer);
+
 
   useEffect(() => {
     if (dataName.length) {
-      setCartItems(dataName[0].cart);
       setUserInfo(dataName[0]);
     }
   }, [dataName]);
@@ -41,14 +42,14 @@ export const Payment_Page = () => {
           </Box>
           <Box>
             <Container maxWidth="lg">
-              <PayPalScriptProvider
+              {cartItems.length == 0 ? <Payment_Empty/> : <PayPalScriptProvider
                 options={{
                   "client-id":
                     "ATt2NUQAHAcFGUxV6pyLnq9ZTrZkAnjYf5tFAkor98oSh4nSj2lWEl-b-WbUld6vPpG7bQN3d2jZ4sBZ",
                 }}
               >
                 <Payment_Content cartItems={cartItems} userInfo={userInfo}/>
-              </PayPalScriptProvider>
+              </PayPalScriptProvider>}
             </Container>
           </Box>
         </>

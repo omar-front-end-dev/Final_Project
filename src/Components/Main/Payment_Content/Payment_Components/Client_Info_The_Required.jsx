@@ -4,12 +4,21 @@ import * as Yup from "yup";
 import PropTypes from "prop-types";
 import { useEffect, useState, useRef } from "react";
 import { Countries_And_Governorate } from "./Countries_And_Governorate.js";
-
-export const Client_Info_The_Required = ({ userInfo, isCompletedOrder, setInitialValues, initialValues }) => {
+import axios from "axios";
+import { useDispatch, useSelector } from "react-redux";
+import { updateCartData, removeAll } from "../../../../RTK/Slices/cartSlice.js"
+export const Client_Info_The_Required = ({
+  userInfo,
+  isCompletedOrder,
+  setInitialValues,
+  initialValues,
+  cartItems,
+}) => {
   const [selectedCountry, setSelectedCountry] = useState("");
   const formikRef = useRef(null);
+  const dispatch = useDispatch();
+  const { userId } = useSelector(state => state.authReducer);    
 
-  
 
   useEffect(() => {
     if (userInfo) {
@@ -22,9 +31,10 @@ export const Client_Info_The_Required = ({ userInfo, isCompletedOrder, setInitia
         city: "",
         addressLine1: "",
         addressLine2: "",
+        OrderItem: cartItems,
       });
     }
-  }, [selectedCountry, setInitialValues, userInfo]);
+  }, [cartItems, selectedCountry, setInitialValues, userInfo]);
 
   const validationSchema = Yup.object({
     firstName: Yup.string()
@@ -57,6 +67,15 @@ export const Client_Info_The_Required = ({ userInfo, isCompletedOrder, setInitia
       ),
   });
 
+  const postOrderData = async (data) => {
+    try {
+      // eslint-disable-next-line no-unused-vars
+      const response = await axios.post("http://localhost:3000/orders", data);
+    } catch (error) {
+      console.error("Error posting data:", error);
+    }
+  };
+
   useEffect(() => {
     if (isCompletedOrder === "COMPLETED" && isCompletedOrder !== "") {
       formikRef.current.submitForm();
@@ -64,7 +83,9 @@ export const Client_Info_The_Required = ({ userInfo, isCompletedOrder, setInitia
   }, [isCompletedOrder]);
 
   const onSubmit = async (values, { setSubmitting, resetForm }) => {
-    await console.log(values);
+    await postOrderData(values);
+    dispatch(updateCartData({ id: userId, cart: [] }));
+    dispatch(removeAll());
     resetForm();
     setSubmitting(false);
   };
@@ -214,4 +235,5 @@ Client_Info_The_Required.propTypes = {
   isCompletedOrder: PropTypes.string,
   setInitialValues: PropTypes.func,
   initialValues: PropTypes.object,
+  cartItems: PropTypes.array,
 };

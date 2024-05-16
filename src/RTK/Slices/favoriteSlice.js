@@ -1,5 +1,5 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-
+import toast from "react-hot-toast";
 const initialState = {
   favoriteItems: [],
   favoriteState: null,
@@ -40,9 +40,11 @@ const favoriteSlice = createSlice({
 
       if (existingItem) {
         state.favoriteState = false;
+        toast.error("This product is already in your favorite list")
       }else{
         state.favoriteState = true;
         state.favoriteItems.push(action.payload);
+        toast.success("This product has been added to favorite list")
       }
       
     },
@@ -50,9 +52,11 @@ const favoriteSlice = createSlice({
       state.favoriteItems = state.favoriteItems.filter(
         (item) => item.id != action.payload
       );
+      toast.error("This product has been deleted from the favorites list");
     },
     removeAllFromFavorite: (state) => {
       state.favoriteItems = [];
+      toast.error("All favorites list has been deleted");
     },
     resetFavoriteState: (state, action) =>{
       state.favoriteState = action.payload

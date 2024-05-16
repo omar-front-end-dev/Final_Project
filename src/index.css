@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Varta&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Varta&display=swap");
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -8,9 +8,11 @@
   user-select: none;
 }
 
-ul{
+ul {
   list-style: none;
 }
-a{
+a {
   text-decoration: none;
 }
+
+

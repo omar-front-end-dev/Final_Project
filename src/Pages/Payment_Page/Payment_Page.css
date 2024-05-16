@@ -1,4 +1,4 @@
-input.field {
+input.field, select.field {
   border: 1px solid #ccc;
   padding: 13px 10px;
   border-radius: 0px;
@@ -10,20 +10,24 @@ input.field {
   letter-spacing: 1px;
 }
 
-input.field:focus {
+select.field{
+    cursor: pointer;
+}
+
+input.field:focus, select.field:focus {
   border: 1px solid #000 !important;
   outline: none;
 }
 
-input.field::placeholder{
-    transition: 0.3s;
-    font-size: 15px;
+input.field::placeholder {
+  transition: 0.3s;
+  font-size: 15px;
 }
 
-input.field:focus::placeholder{
-    padding: 0px 15px !important;
+input.field:focus::placeholder {
+  padding: 0px 15px !important;
 }
-.error-message{
+.error-message {
   color: #ba2026;
   padding: 0 0 5px 0;
 }

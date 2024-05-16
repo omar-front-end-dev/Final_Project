@@ -21,11 +21,7 @@ export const Register = () => {
       .then((data) => setUsers(data));
   }, [setUsers]);
   
-  const registerUser = async (userData) => {
-    
-
-
-  
+  const registerUser = async (userData) => {  
     const userExists = users.find(
       (user) => user.email === userData.email
     );

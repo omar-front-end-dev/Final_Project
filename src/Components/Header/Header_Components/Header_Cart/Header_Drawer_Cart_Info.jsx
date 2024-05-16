@@ -1,10 +1,11 @@
 import { useTheme } from "@emotion/react";
-import { Box, Button, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
+import { PropTypes } from "prop-types"
 
-export const Header_Drawer_Cart_Info = () => {
+export const Header_Drawer_Cart_Info = ({ toggleDrawer }) => {
   const theme = useTheme();
   const { cartItems } = useSelector((state) => state.cartReducer);
 
@@ -102,25 +103,30 @@ export const Header_Drawer_Cart_Info = () => {
       >
         Taxes and Duties are added on checkout
       </Typography>
-      <Button
-        className="cart-drawer__secure-checkout"
-        sx={{
-          width: "100%",
-          bgcolor: theme.palette.ThirdColor.main,
-          p: "10px 0",
-          color: "#fff",
-          fontSize: "16px",
-          fontWeight: "bold",
-          textTransform: "uppercase",
-          display: "flex",
-          alignItems: "center",
-          gap: 1,
-          mb: "13px",
-        }}
-      >
-        <LockOutlinedIcon sx={{ color: "#fff" }} />
-        Secure checkout
-      </Button>
+        <Link
+          className="cart-drawer__secure-checkout"
+          onClick={toggleDrawer("right", false)}
+          style={{
+            width: "100%",
+            backgroundColor: theme.palette.ThirdColor.main,
+            padding: "12px 0",
+            color: "#fff",
+            fontSize: "16px",
+            fontWeight: "bold",
+            textTransform: "uppercase",
+            display: "flex",
+            alignItems: "center",
+            transition: ".3s",
+            justifyContent :"center",
+            gap: 1,
+            margin: "13px 0",
+            borderRadius: "2px"
+          }}
+          to={"/account/payment-page"}
+        >
+          <LockOutlinedIcon />
+          Secure checkout
+        </Link>
       <Box sx={{ textAlign: "center" }}>
         <Link
           className="cart-drawer__link"
@@ -139,3 +145,7 @@ export const Header_Drawer_Cart_Info = () => {
     </Box>
   );
 };
+
+Header_Drawer_Cart_Info.propTypes = {
+  toggleDrawer: PropTypes.func,
+}

@@ -6988,6 +6988,53 @@
       "password": "x6DGsHTFn4.KNYG",
       "cart": [
         {
+          "productStock": 20,
+          "productId": "10",
+          "productTitle": "Mayze Stack Women's Chelsea Boot",
+          "productColor": {
+            "default": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/386272/01/sv01/fnd/DFA/fmt/png/Mayze-Stack-Women's-Chelsea-Boot",
+            "imagesGroup": [
+              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/386272/01/sv01/fnd/DFA/fmt/png/Mayze-Stack-Women's-Chelsea-Boot",
+              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/386272/01/fnd/DFA/fmt/png/Mayze-Stack-Women's-Chelsea-Boot",
+              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/386272/01/bv/fnd/DFA/fmt/png/Mayze-Stack-Women's-Chelsea-Boot",
+              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/386272/01/sv02/fnd/DFA/fmt/png/Mayze-Stack-Women's-Chelsea-Boot",
+              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/386272/01/sv03/fnd/DFA/fmt/png/Mayze-Stack-Women's-Chelsea-Boot",
+              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/386272/01/sv04/fnd/DFA/fmt/png/Mayze-Stack-Women's-Chelsea-Boot"
+            ]
+          },
+          "productSize": "40.5",
+          "productPrice": 6.979,
+          "productQuantity": 1,
+          "productGender": "women",
+          "productCategory": "shoes",
+          "productMaxQuantity": 1,
+          "id": "HteTvKSz"
+        },
+        {
+          "productStock": 20,
+          "productId": "7",
+          "productTitle": "PWR NITRO™ SQD Women's Training Shoes",
+          "productColor": {
+            "default": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/379570/02/sv01/fnd/DFA/fmt/png/PWR-NITRO%E2%84%A2-SQD-Women's-Training-Shoes",
+            "imagesGroup": [
+              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/379570/02/sv01/fnd/DFA/fmt/png/PWR-NITRO%E2%84%A2-SQD-Women's-Training-Shoes",
+              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/379570/02/mod01/fnd/DFA/fmt/png/PWR-NITRO%E2%84%A2-SQD-Women's-Training-Shoes",
+              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/379570/02/fnd/DFA/fmt/png/PWR-NITRO%E2%84%A2-SQD-Women's-Training-Shoes",
+              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/379570/02/bv/fnd/DFA/fmt/png/PWR-NITRO%E2%84%A2-SQD-Women's-Training-Shoes",
+              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/379570/02/sv02/fnd/DFA/fmt/png/PWR-NITRO%E2%84%A2-SQD-Women's-Training-Shoes",
+              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/379570/02/sv04/fnd/DFA/fmt/png/PWR-NITRO%E2%84%A2-SQD-Women's-Training-Shoes",
+              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/379570/02/sv03/fnd/DFA/fmt/png/PWR-NITRO%E2%84%A2-SQD-Women's-Training-Shoes"
+            ]
+          },
+          "productSize": "41",
+          "productPrice": 7.519,
+          "productQuantity": 1,
+          "productGender": "women",
+          "productCategory": "shoes",
+          "productMaxQuantity": 1,
+          "id": "WLEXWbcN"
+        },
+        {
           "productStock": 66,
           "productId": "9",
           "productTitle": "PUMA x THE RAGGED PRIEST Mayze Stack Sneakers Women",
@@ -7003,41 +7050,124 @@
               "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/392057/01/sv04/fnd/DFA/fmt/png/PUMA-x-THE-RAGGED-PRIEST-Mayze-Stack-Sneakers-Women"
             ]
           },
-          "productSize": "39",
+          "productSize": "41",
           "productSale": 3.349,
           "productPrice": 6.709,
-          "productQuantity": 4,
+          "productQuantity": 3,
           "productGender": "women",
           "productCategory": "shoes",
           "productMaxQuantity": 5,
-          "id": "4455cZy3"
+          "id": "yW2eOcMH"
+        },
+        {
+          "productStock": 45,
+          "productId": "165",
+          "productTitle": "PWR XX NITRO™ Training Shoes Women",
+          "productColor": {
+            "default": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/376969/02/sv01/fnd/DFA/fmt/png/PWR-XX-NITRO%E2%84%A2-Training-Shoes-Women",
+            "imagesGroup": [
+              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/376969/02/sv01/fnd/DFA/fmt/png/PWR-XX-NITRO%E2%84%A2-Training-Shoes-Women",
+              "https://videos.puma.net/videos/376980/01/vid01/fnd/EEA/",
+              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/376969/02/mod03/fnd/DFA/fmt/png/PWR-XX-NITRO%E2%84%A2-Training-Shoes-Women",
+              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/376969/02/mod01/fnd/DFA/fmt/png/PWR-XX-NITRO%E2%84%A2-Training-Shoes-Women",
+              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/376969/02/mod02/fnd/DFA/fmt/png/PWR-XX-NITRO%E2%84%A2-Training-Shoes-Women",
+              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/376969/02/fnd/DFA/fmt/png/PWR-XX-NITRO%E2%84%A2-Training-Shoes-Women",
+              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/376969/02/bv/fnd/DFA/fmt/png/PWR-XX-NITRO%E2%84%A2-Training-Shoes-Women",
+              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/376969/02/sv02/fnd/DFA/fmt/png/PWR-XX-NITRO%E2%84%A2-Training-Shoes-Women",
+              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/376969/02/sv03/fnd/DFA/fmt/png/PWR-XX-NITRO%E2%84%A2-Training-Shoes-Women",
+              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/376969/02/sv04/fnd/DFA/fmt/png/PWR-XX-NITRO%E2%84%A2-Training-Shoes-Women",
+              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/376969/02/dt01/fnd/DFA/fmt/png/PWR-XX-NITRO%E2%84%A2-Training-Shoes-Women",
+              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/376969/02/dt02/fnd/DFA/fmt/png/PWR-XX-NITRO%E2%84%A2-Training-Shoes-Women",
+              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/376969/02/dt04/fnd/DFA/fmt/png/PWR-XX-NITRO%E2%84%A2-Training-Shoes-Women"
+            ]
+          },
+          "productSize": "40",
+          "productSale": 3.219,
+          "productPrice": 5.369,
+          "productQuantity": 1,
+          "productGender": "women",
+          "productCategory": "shoes",
+          "productMaxQuantity": 3,
+          "id": "1okjVc4V"
+        },
+        {
+          "productStock": 45,
+          "productId": "165",
+          "productTitle": "PWR XX NITRO™ Training Shoes Women",
+          "productColor": {
+            "default": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/376969/02/sv01/fnd/DFA/fmt/png/PWR-XX-NITRO%E2%84%A2-Training-Shoes-Women",
+            "imagesGroup": [
+              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/376969/02/sv01/fnd/DFA/fmt/png/PWR-XX-NITRO%E2%84%A2-Training-Shoes-Women",
+              "https://videos.puma.net/videos/376980/01/vid01/fnd/EEA/",
+              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/376969/02/mod03/fnd/DFA/fmt/png/PWR-XX-NITRO%E2%84%A2-Training-Shoes-Women",
+              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/376969/02/mod01/fnd/DFA/fmt/png/PWR-XX-NITRO%E2%84%A2-Training-Shoes-Women",
+              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/376969/02/mod02/fnd/DFA/fmt/png/PWR-XX-NITRO%E2%84%A2-Training-Shoes-Women",
+              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/376969/02/fnd/DFA/fmt/png/PWR-XX-NITRO%E2%84%A2-Training-Shoes-Women",
+              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/376969/02/bv/fnd/DFA/fmt/png/PWR-XX-NITRO%E2%84%A2-Training-Shoes-Women",
+              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/376969/02/sv02/fnd/DFA/fmt/png/PWR-XX-NITRO%E2%84%A2-Training-Shoes-Women",
+              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/376969/02/sv03/fnd/DFA/fmt/png/PWR-XX-NITRO%E2%84%A2-Training-Shoes-Women",
+              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/376969/02/sv04/fnd/DFA/fmt/png/PWR-XX-NITRO%E2%84%A2-Training-Shoes-Women",
+              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/376969/02/dt01/fnd/DFA/fmt/png/PWR-XX-NITRO%E2%84%A2-Training-Shoes-Women",
+              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/376969/02/dt02/fnd/DFA/fmt/png/PWR-XX-NITRO%E2%84%A2-Training-Shoes-Women",
+              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/376969/02/dt04/fnd/DFA/fmt/png/PWR-XX-NITRO%E2%84%A2-Training-Shoes-Women"
+            ]
+          },
+          "productSize": "41",
+          "productSale": 3.219,
+          "productPrice": 5.369,
+          "productQuantity": 1,
+          "productGender": "women",
+          "productCategory": "shoes",
+          "productMaxQuantity": 3,
+          "id": "gHTADer8"
         }
       ],
       "favorites": [
         {
-          "productStock": 33,
-          "productId": "14",
-          "productTitle": "Delphin Sneakers",
+          "productStock": 20,
+          "productId": "10",
+          "productTitle": "Mayze Stack Women's Chelsea Boot",
           "productColor": {
-            "default": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/390685/01/sv01/fnd/DFA/fmt/png/Delphin-Sneakers",
+            "default": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/386272/01/sv01/fnd/DFA/fmt/png/Mayze-Stack-Women's-Chelsea-Boot",
             "imagesGroup": [
-              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/390685/01/sv01/fnd/DFA/fmt/png/Delphin-Sneakers",
-              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/390685/01/mod03/fnd/DFA/fmt/png/Delphin-Sneakers",
-              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/390685/01/mod02/fnd/DFA/fmt/png/Delphin-Sneakers",
-              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/390685/01/fnd/DFA/fmt/png/Delphin-Sneakers",
-              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/390685/01/bv/fnd/DFA/fmt/png/Delphin-Sneakers",
-              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/390685/01/sv02/fnd/DFA/fmt/png/Delphin-Sneakers",
-              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/390685/01/sv03/fnd/DFA/fmt/png/Delphin-Sneakers",
-              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/390685/01/sv04/fnd/DFA/fmt/png/Delphin-Sneakers"
+              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/386272/01/sv01/fnd/DFA/fmt/png/Mayze-Stack-Women's-Chelsea-Boot",
+              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/386272/01/fnd/DFA/fmt/png/Mayze-Stack-Women's-Chelsea-Boot",
+              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/386272/01/bv/fnd/DFA/fmt/png/Mayze-Stack-Women's-Chelsea-Boot",
+              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/386272/01/sv02/fnd/DFA/fmt/png/Mayze-Stack-Women's-Chelsea-Boot",
+              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/386272/01/sv03/fnd/DFA/fmt/png/Mayze-Stack-Women's-Chelsea-Boot",
+              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/386272/01/sv04/fnd/DFA/fmt/png/Mayze-Stack-Women's-Chelsea-Boot"
             ]
           },
-          "productSize": "43",
-          "productPrice": 4.829,
+          "productSize": "40",
+          "productPrice": 6.979,
           "productQuantity": 1,
-          "productGender": "man",
+          "productGender": "women",
           "productCategory": "shoes",
-          "productMaxQuantity": 2,
-          "id": "CYJhHWko"
+          "productMaxQuantity": 1,
+          "id": "36O0xCv5"
+        },
+        {
+          "productStock": 20,
+          "productId": "10",
+          "productTitle": "Mayze Stack Women's Chelsea Boot",
+          "productColor": {
+            "default": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/386272/01/sv01/fnd/DFA/fmt/png/Mayze-Stack-Women's-Chelsea-Boot",
+            "imagesGroup": [
+              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/386272/01/sv01/fnd/DFA/fmt/png/Mayze-Stack-Women's-Chelsea-Boot",
+              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/386272/01/fnd/DFA/fmt/png/Mayze-Stack-Women's-Chelsea-Boot",
+              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/386272/01/bv/fnd/DFA/fmt/png/Mayze-Stack-Women's-Chelsea-Boot",
+              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/386272/01/sv02/fnd/DFA/fmt/png/Mayze-Stack-Women's-Chelsea-Boot",
+              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/386272/01/sv03/fnd/DFA/fmt/png/Mayze-Stack-Women's-Chelsea-Boot",
+              "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/386272/01/sv04/fnd/DFA/fmt/png/Mayze-Stack-Women's-Chelsea-Boot"
+            ]
+          },
+          "productSize": "40.5",
+          "productPrice": 6.979,
+          "productQuantity": 1,
+          "productGender": "women",
+          "productCategory": "shoes",
+          "productMaxQuantity": 1,
+          "id": "4F5jpmws"
         }
       ]
     }

@@ -16,7 +16,7 @@ export const Header_Drawer_Cart_Content = ({ toggleDrawer }) => {
             {cartItems.map((cartItem, index) => {
               return <Header_Drawer_Cart_Items key={index} cartItem={cartItem} toggleDrawer={toggleDrawer} />
             })}
-            <Header_Drawer_Cart_Info />
+            <Header_Drawer_Cart_Info toggleDrawer={toggleDrawer}/>
         </Box>
       )}
     </Box>

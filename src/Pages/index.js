@@ -5,6 +5,7 @@ import { Favorite_Products } from "./Favorite_Products/Favorite_Products";
 import { Cart_Page } from "./Cart_Page/Cart_Page";
 import { Authentication_Page } from "./Authentication_Page/Authentication_Page";
 import { Single_Product } from "./Single_Product/Single_Product";
+import { Payment_Page } from "./Payment_Page/Payment_Page";
 
 export {
   Shopping_By_Shop_Types_Page,
@@ -14,4 +15,5 @@ export {
   Cart_Page,
   Authentication_Page,
   Single_Product,
+  Payment_Page
 };

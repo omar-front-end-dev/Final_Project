@@ -42,6 +42,7 @@ import { Bread_Crumbs } from "./Bread_Crumbs/Bread_Crumbs";
 import { Authentication_Links } from "./Authentication_Links/Authentication_Links";
 import { Scroll_To_Top } from "./Scroll_To_Top/Scroll_To_Top";
 import { Handle_With_Quantity_In_Shop } from "./Handle_With_Quantity_In_Shop/Handle_With_Quantity_In_Shop";
+import { Payment_Content } from "./Payment_Content/Payment_Content";
 
 export {
   Video_Player,
@@ -88,4 +89,5 @@ export {
   Authentication_Links,
   Scroll_To_Top,
   Handle_With_Quantity_In_Shop,
+  Payment_Content,
 };

@@ -22,6 +22,7 @@ import {
   Cart_Page,
   Authentication_Page,
   Single_Product,
+  Payment_Page,
 } from "./Pages/index";
 
 function App() {
@@ -36,13 +37,13 @@ function App() {
   }, [dispatch, isAuth, userId]);
 
   useEffect(() => {
-    if (userId && cartItems.length > 0) {
+    if (userId && cartItems.length) {
       dispatch(updateCartData({ id: userId, cart: cartItems }));
     }
   }, [dispatch, userId, cartItems]);
 
   useEffect(() => {
-    if (userId && favoriteItems.length > 0) {
+    if (userId && favoriteItems.length) {
       dispatch(updateFavoriteData({ id: userId, favorites: favoriteItems }));
     }
   }, [dispatch, userId, favoriteItems, cartItems]);
@@ -68,6 +69,10 @@ function App() {
         <Route
           path={`shopping/:shoppingType/:category`}
           element={<Shopping_By_ShopTypes_And_Categories_Page />}
+        />
+        <Route
+          path={`account/payment-page`}
+          element={<Payment_Page/>}
         />
       </Route>
     )

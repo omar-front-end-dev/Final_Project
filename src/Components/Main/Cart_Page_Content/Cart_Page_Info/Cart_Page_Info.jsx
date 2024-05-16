@@ -1,12 +1,12 @@
 import { useTheme } from "@emotion/react";
-import { Box, Button, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 export const Cart_Page_Info = () => {
   const { cartItems } = useSelector((state) => state.cartReducer);
   const theme = useTheme();
-
 
   const Calculate_Shopping_Cost = (cost) => {
     const totalCosts = cartItems
@@ -21,10 +21,6 @@ export const Cart_Page_Info = () => {
     return totalCosts;
   };
 
- 
-
-
-
   return (
     <Box
       sx={{
@@ -34,7 +30,7 @@ export const Cart_Page_Info = () => {
         border: `1px solid #eee`,
         position: "sticky",
         top: "100px",
-        width: "100%"
+        width: "100%",
       }}
     >
       <Box
@@ -87,14 +83,14 @@ export const Cart_Page_Info = () => {
       >
         <Typography
           component={"h6"}
-          sx={{ fontSize: {xs: "15px", sm: "19px"}, fontWeight: "bold" }}
+          sx={{ fontSize: { xs: "15px", sm: "19px" }, fontWeight: "bold" }}
         >
           Total shopping cost
         </Typography>
         <Typography
           component={"h6"}
           sx={{
-            fontSize: {xs: "15px", sm: "19px"},
+            fontSize: { xs: "15px", sm: "19px" },
             fontWeight: "bold",
             color: "#ba2026",
           }}
@@ -108,25 +104,29 @@ export const Cart_Page_Info = () => {
       >
         Taxes and Duties are added on checkout
       </Typography>
-      <Button
+      <Link
         className="cart-drawer__secure-checkout"
-        sx={{
+        style={{
           width: "100%",
-          bgcolor: theme.palette.ThirdColor.main,
-          p: "10px 0",
+          backgroundColor: theme.palette.ThirdColor.main,
+          padding: "12px 0",
           color: "#fff",
           fontSize: "16px",
           fontWeight: "bold",
           textTransform: "uppercase",
           display: "flex",
           alignItems: "center",
+          transition: ".3s",
+          justifyContent: "center",
           gap: 1,
-          mb: "13px",
+          margin: "13px 0",
+          borderRadius: "2px",
         }}
+        to={"/account/payment-page"}
       >
-        <LockOutlinedIcon sx={{ color: "#fff" }} />
+        <LockOutlinedIcon />
         Secure checkout
-      </Button>
+      </Link>
     </Box>
   );
 };
